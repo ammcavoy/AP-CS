@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=filename
+comment0.target=PlaintextScanner(java.lang.String)
+comment1.params=
+comment1.target=java.util.ArrayList\ getPlainText()
+comment2.params=
+comment2.target=int[]\ getFrequency()
+comment3.params=
+comment3.target=void\ printFrequencies()
+numComments=4

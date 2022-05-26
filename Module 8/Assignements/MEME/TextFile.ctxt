@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=int\ fileSize()
+comment1.params=index\ numWords
+comment1.target=void\ deleteWords(int,\ int)
+comment2.params=index\ newWords
+comment2.target=void\ addWords(int,\ java.lang.String[])
+numComments=3

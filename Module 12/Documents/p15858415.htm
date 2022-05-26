@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>12.04_PiecewiseFunctionsToRecursiveMethods</title>
+<script>
+		var isReview = 'false';                     
+	
+	    function unloadWindow() {
+	    	if (window.opener!=null) {               	 
+			   // If the refreshCurriculumTree method exists, then call it.
+			   // Otherwise, just reload the page.
+               if (window.opener.refreshCurriculumTree) {  
+               		window.opener.refreshCurriculumTree();
+			   } else {
+			   		var URL = unescape(window.opener.location);            
+               		window.opener.location.href = URL; 			   
+			   }               	
+            }
+	    }
+
+	    function resizeWin(w,h) {
+	     if (parseInt(navigator.appVersion)>3 && w > 0 && h > 0) {
+	       sw = screen.width;
+	       sh = screen.height;
+
+	       l = sx = top.screenLeft; if (l == undefined) l = window.screenX;
+	       t = sy = top.screenTop;  if (t == undefined) t = window.screenY;
+
+	       if (w > sw) {
+		 h *= (sw/w);
+		 w = sw;
+	       }
+
+	       if (h > sh) {
+		 w *= (sh/h);
+		 h = sh;
+	       }
+
+    //           if (l + w > sw)
+		 l = (sw - w) / 2;
+    //           if (t + h > sh)
+		 t = (sh - h) / 2;
+
+	       if (l != sx || t != sy)
+		 top.moveTo(l, t);
+
+           // If in review mode, resize the window by dimenstions of review
+           // mode message.
+           if (isReview == 'true') {
+                h += 60;
+                if (w<420) w=420;
+           }
+
+	       if (navigator.appName=="Netscape") {
+                top.innerWidth=w;
+                top.innerHeight=h;
+	       } else {
+                top.resizeTo(w, h);
+
+                 if (navigator.appName=="Microsoft Internet Explorer") {
+                   b = document.body;
+                   top.resizeBy(w - b.clientWidth, h - b.clientHeight);
+                 }
+	       }
+	     }
+	    }
+
+
+
+	
+	</script>
+</head>
+<body onunload="" bgcolor="white" marginheight="0" marginwidth="0" leftmargin="0" rightmargin="0" topmargin="0">
+<script>resizeWin(900, 550)</script><script language="JavaScript" type="text/javascript">
+			
+			// -----------------------------------------------------------------------------
+			var requiredMajorVersion = 8;
+			var requiredMinorVersion = 0;
+			var requiredRevision = 0;
+			// -----------------------------------------------------------------------------
+			
+			</script><script src="/common/scripts/AC_OETags.js"></script><script src="/common/scripts/flashPlugin.js"></script>
+<center>
+<script language="JavaScript" type="text/javascript">
+		
+		<!--
+		// Version check based upon the values entered above in "Globals"
+		var hasRequestedVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+
+		// Check to see if the version meets the requirements for playback
+		if (hasRequestedVersion) {  // if we've detected an acceptable version
+		
+		flashPlugin('http', '100%', '100%', 'middle', 'sameDomain', '/p15858415/default/viewer.swf?aicc_url=http%3A%2F%2Fbreeze.flvs.net%3A9090%2Fservlet%2Fverify%3Fsco-id%3D1708245%26airspeed%3D1&aicc_sid=3qeamutotubc&airspeed=1&qu=%2Flmsproxy%3Fsco-id%3D1708245%26sid%3D3qeamutotubc%26qdata%3D&baseurl=%2Fp15858415%2Fdefault%2F&plugin=plugin.swf&host=breeze.flvs.net&path=/p15858415&sco-id=1708245&ticket=3qeamutotubc&transcript-id=12652637&room=1708245;session=breezoqnuigsrzycn5aaf&ticket=3qeamutotubc&proxy=false&appInstance=7/1708245-2/output/&fcsContent=true&pbMode=normal&conStrings=rtmp%3A%2F%2Fbreeze.flvs.net%3A1935%2F%3Frtmp%3A%2F%2Flocalhost%3A8506%2F%2Crtmpt%3A%2F%2Fbreeze.flvs.net%3A1935%2F%3Frtmp%3A%2F%2Flocalhost%3A8506%2F&lang=en&account_id=7', 'false', 'best', 'scale', '#676767', '', '6,0,65,0', '/p15858415/');
+		
+		  } else {  // flash is too old or we can't detect the plugin
+			window.location = "/system/get-player";
+		  }
+		// -->
+		
+		</script>
+</center>
+<noscript>
+<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,65,0" SCROLL="NO" WIDTH="100%" HEIGHT="100%"><PARAM NAME="movie" VALUE="/p15858415/default/viewer.swf?aicc_url=http%3A%2F%2Fbreeze.flvs.net%3A9090%2Fservlet%2Fverify%3Fsco-id%3D1708245%26airspeed%3D1&amp;aicc_sid=3qeamutotubc&amp;airspeed=1&amp;qu=%2Flmsproxy%3Fsco-id%3D1708245%26sid%3D3qeamutotubc%26qdata%3D&amp;baseurl=%2Fp15858415%2Fdefault%2F&amp;plugin=plugin.swf&amp;host=breeze.flvs.net&amp;path=/p15858415&amp;sco-id=1708245&amp;ticket=3qeamutotubc&amp;transcript-id=12652637&amp;room=1708245;session=breezoqnuigsrzycn5aaf&amp;ticket=3qeamutotubc&amp;proxy=false&amp;appInstance=7/1708245-2/output/&amp;fcsContent=true&amp;pbMode=normal&amp;conStrings=rtmp%3A%2F%2Fbreeze.flvs.net%3A1935%2F%3Frtmp%3A%2F%2Flocalhost%3A8506%2F%2Crtmpt%3A%2F%2Fbreeze.flvs.net%3A1935%2F%3Frtmp%3A%2F%2Flocalhost%3A8506%2F&amp;lang=en&amp;account_id=7"><PARAM NAME="base" VALUE="/p15858415/"><PARAM NAME="quality" VALUE="best"><PARAM NAME="menu" VALUE="false"><PARAM NAME="ALLOWSCRIPTACCESS" VALUE="sameDomain"><EMBED MENU="false" QUALITY="best" TYPE="application/x-shockwave-flash" ALLOWSCRIPTACCESS="sameDomain" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer_en" SRC="/p15858415/default/viewer.swf?aicc_url=http%3A%2F%2Fbreeze.flvs.net%3A9090%2Fservlet%2Fverify%3Fsco-id%3D1708245%26airspeed%3D1&amp;aicc_sid=3qeamutotubc&amp;airspeed=1&amp;qu=%2Flmsproxy%3Fsco-id%3D1708245%26sid%3D3qeamutotubc%26qdata%3D&amp;baseurl=%2Fp15858415%2Fdefault%2F&amp;plugin=plugin.swf&amp;host=breeze.flvs.net&amp;path=/p15858415&amp;sco-id=1708245&amp;ticket=3qeamutotubc&amp;transcript-id=12652637&amp;room=1708245;session=breezoqnuigsrzycn5aaf&amp;ticket=3qeamutotubc&amp;proxy=false&amp;appInstance=7/1708245-2/output/&amp;fcsContent=true&amp;pbMode=normal&amp;conStrings=rtmp%3A%2F%2Fbreeze.flvs.net%3A1935%2F%3Frtmp%3A%2F%2Flocalhost%3A8506%2F%2Crtmpt%3A%2F%2Fbreeze.flvs.net%3A1935%2F%3Frtmp%3A%2F%2Flocalhost%3A8506%2F&amp;lang=en&amp;account_id=7" BASE="/p15858415/" FLASHVARS="" WIDTH="100%" HEIGHT="100%"></EMBED></OBJECT></noscript>
+</body>
+</html>

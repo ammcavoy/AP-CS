@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Gravity
+comment1.params=radius\ mass
+comment1.target=double[]\ calcGravity(double[],\ double[])
+comment2.params=name\ radius\ mass\ gravity
+comment2.target=void\ printResults(java.lang.String[],\ double[],\ double[],\ double[])
+comment3.params=gravity
+comment3.target=void\ printToFile(double[])
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5

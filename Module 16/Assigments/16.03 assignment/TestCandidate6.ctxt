@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=
+comment1.target=double\ getTotal()
+comment2.params=
+comment2.target=void\ printResults()
+comment3.params=location\ name\ votes
+comment3.target=void\ insertPosition(int,\ java.lang.String,\ int)
+comment4.params=find\ name\ votes
+comment4.target=void\ insertCandidate(java.lang.String,\ java.lang.String,\ int)
+numComments=5

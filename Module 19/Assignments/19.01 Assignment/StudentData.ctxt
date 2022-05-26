@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=first\ last\ scores
+comment0.target=StudentData(java.lang.String,\ java.lang.String,\ double[])
+comment1.params=
+comment1.target=java.lang.String\ getName()
+comment2.params=
+comment2.target=java.lang.String\ getLast()
+comment3.params=
+comment3.target=double[]\ getScores()
+comment4.params=
+comment4.target=char\ getGrade()
+comment5.params=scores
+comment5.target=java.lang.String\ scoresString(double[])
+comment6.params=scores
+comment6.target=java.lang.String\ toString(double[])
+comment7.params=list
+comment7.target=char\ courseGrade(double[])
+numComments=8

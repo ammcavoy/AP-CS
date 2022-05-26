@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=startMiles\ endMiles
+comment0.target=int\ calcTripMiles(int,\ int)
+comment1.params=tripMiles\ gallons
+comment1.target=double\ calcMPG(int,\ double)
+comment2.params=price\ gallons
+comment2.target=double\ calcCost(double,\ double)
+comment3.params=gallons\ tripMiles
+comment3.target=double\ calcGPM(double,\ int)
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5

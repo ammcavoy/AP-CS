@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=fileName
+comment0.target=MorseCode(java.lang.String)
+comment0.text=\r\n\ This\ Constructor\ actually\ imports\ the\ list\ of\ Morse\ Code\ Characters\ and\ adds\ it\ to\ an\ ArrayList.\r\n
+comment1.params=s
+comment1.target=java.lang.String\ getMorse(java.lang.String)
+comment2.params=u
+comment2.target=java.lang.String\ getMessage(java.lang.String)
+numComments=3
